@@ -6,56 +6,62 @@
 //
 
 import SwiftUI
+import SwiftUI
 
 struct ContentView: View {
     
     @State private var textFieldText: String = ""
     
-    private var systemFonts: [Font] = [
-        .title,
-        .body,
-        .callout,
-        .footnote,
-        .caption,
-        .caption2,
-        .headline,
-        .largeTitle,
-        .subheadline,
-        .title2
+    private var fontFamilies: [FontFamily] = [
+        FontFamily(name: "System", fonts: [
+            .largeTitle,
+            .title,
+            .body,
+            .callout,
+            .footnote,
+            .caption,
+            .caption2,
+            .headline,
+            .subheadline,
+            .title2
+        ]),
+        FontFamily(name: "Roboto", fonts: RobotoFont.allCases.map {
+            Font.custom($0.rawValue, size: 19)
+        })
     ]
     
     var body: some View {
         NavigationStack {
-            VStack {
-                TextField("Enter your text", text: $textFieldText)
-                    .textFieldStyle(.roundedBorder)
-                List(systemFonts, id: \.self) { font in
-                    Text(textFieldText)
-                        .font(font)
-                        .listRowSeparator(.hidden)
-                        .listRowInsets(EdgeInsets())
+            List {
+                ForEach(fontFamilies, id: \.name) { fontFamily in
+                    Section(header: header(for: fontFamily.name)) {
+                        ForEach(fontFamily.fonts, id: \.self) { font in
+                            Text(textFieldText.isEmpty ? "Example Text" : textFieldText)
+                                .font(font)
+                                .listRowSeparator(.hidden)
+                                .listRowInsets(EdgeInsets())
+                        }
+                    }
                 }
-                .listStyle(.plain)
-                
-                Divider()
-                
-                List(RobotoFont.allCases, id: \.self) { robotoFont in
-                    Text(textFieldText)
-                        .font(.custom(robotoFont.rawValue, size: 19))
-                        .listRowSeparator(.hidden)
-                        .listRowInsets(EdgeInsets())
-                }
-                .listStyle(.plain)
             }
+            .listStyle(.plain)
             .padding()
-            
-            .navigationTitle("Font changer")
+            .navigationTitle("Font Changer")
         }
+        .searchable(text: $textFieldText)
+    }
+    
+    private func header(for familyName: String) -> some View {
+        Text(familyName)
+            .font(.custom(RobotoFont.medium.rawValue, size: 20))
+            .foregroundStyle(.green.gradient)
+            .padding(.leading, -20)
     }
 }
 
-#Preview {
-    ContentView()
+struct FontFamily {
+    let name: String
+    let fonts: [Font]
 }
 
 enum RobotoFont: String, CaseIterable {
@@ -71,4 +77,10 @@ enum RobotoFont: String, CaseIterable {
     case black = "Roboto-Black"
     case blackItalic = "Roboto-BlackItalic"
     case italic = "Roboto-Italic"
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
