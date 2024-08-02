@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var textFieldText: String = ""
-    @State private var fonts: [Font] = [
+    
+    private var systemFonts: [Font] = [
         .title,
         .body,
         .callout,
@@ -28,9 +29,19 @@ struct ContentView: View {
             VStack {
                 TextField("Enter your text", text: $textFieldText)
                     .textFieldStyle(.roundedBorder)
-                List(fonts, id: \.self) { font in
+                List(systemFonts, id: \.self) { font in
                     Text(textFieldText)
                         .font(font)
+                        .listRowSeparator(.hidden)
+                        .listRowInsets(EdgeInsets())
+                }
+                .listStyle(.plain)
+                
+                Divider()
+                
+                List(RobotoFont.allCases, id: \.self) { robotoFont in
+                    Text(textFieldText)
+                        .font(.custom(robotoFont.rawValue, size: 19))
                         .listRowSeparator(.hidden)
                         .listRowInsets(EdgeInsets())
                 }
@@ -45,4 +56,19 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+enum RobotoFont: String, CaseIterable {
+    case regular = "Roboto-Regular"
+    case thin = "Roboto-Thin"
+    case thinItalic = "Roboto-ThinItalic"
+    case light = "Roboto-Light"
+    case lightItalic = "Roboto-LightItalic"
+    case medium = "Roboto-Medium"
+    case mediumItalic = "Roboto-MediumItalic"
+    case bold = "Roboto-Bold"
+    case boldItalic = "Roboto-BoldItalic"
+    case black = "Roboto-Black"
+    case blackItalic = "Roboto-BlackItalic"
+    case italic = "Roboto-Italic"
 }

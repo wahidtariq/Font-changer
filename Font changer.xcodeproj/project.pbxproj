@@ -11,6 +11,19 @@
 		9A3A93012C56B021007D1BD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A93002C56B021007D1BD1 /* ContentView.swift */; };
 		9A3A93032C56B023007D1BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3A93022C56B023007D1BD1 /* Assets.xcassets */; };
 		9A3A93062C56B023007D1BD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3A93052C56B023007D1BD1 /* Preview Assets.xcassets */; };
+		9A9ABF662C5D14590029615D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF582C5D14590029615D /* LICENSE.txt */; };
+		9A9ABF672C5D14590029615D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF592C5D14590029615D /* Roboto-Black.ttf */; };
+		9A9ABF682C5D14590029615D /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF5A2C5D14590029615D /* Roboto-BlackItalic.ttf */; };
+		9A9ABF692C5D14590029615D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF5B2C5D14590029615D /* Roboto-Bold.ttf */; };
+		9A9ABF6A2C5D14590029615D /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF5C2C5D14590029615D /* Roboto-BoldItalic.ttf */; };
+		9A9ABF6B2C5D14590029615D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF5D2C5D14590029615D /* Roboto-Italic.ttf */; };
+		9A9ABF6C2C5D14590029615D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF5E2C5D14590029615D /* Roboto-Light.ttf */; };
+		9A9ABF6D2C5D14590029615D /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF5F2C5D14590029615D /* Roboto-LightItalic.ttf */; };
+		9A9ABF6E2C5D14590029615D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF602C5D14590029615D /* Roboto-Medium.ttf */; };
+		9A9ABF6F2C5D14590029615D /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF612C5D14590029615D /* Roboto-MediumItalic.ttf */; };
+		9A9ABF702C5D14590029615D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF622C5D14590029615D /* Roboto-Regular.ttf */; };
+		9A9ABF712C5D14590029615D /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF632C5D14590029615D /* Roboto-Thin.ttf */; };
+		9A9ABF722C5D14590029615D /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ABF642C5D14590029615D /* Roboto-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +32,20 @@
 		9A3A93002C56B021007D1BD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A3A93022C56B023007D1BD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A3A93052C56B023007D1BD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A9ABF572C5D13DE0029615D /* Font-changer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Font-changer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9A9ABF582C5D14590029615D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9A9ABF592C5D14590029615D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		9A9ABF5A2C5D14590029615D /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		9A9ABF5B2C5D14590029615D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		9A9ABF5C2C5D14590029615D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9A9ABF5D2C5D14590029615D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		9A9ABF5E2C5D14590029615D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		9A9ABF5F2C5D14590029615D /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		9A9ABF602C5D14590029615D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		9A9ABF612C5D14590029615D /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		9A9ABF622C5D14590029615D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		9A9ABF632C5D14590029615D /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		9A9ABF642C5D14590029615D /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +78,8 @@
 		9A3A92FD2C56B021007D1BD1 /* Font changer */ = {
 			isa = PBXGroup;
 			children = (
+				9A9ABF652C5D14590029615D /* Roboto */,
+				9A9ABF572C5D13DE0029615D /* Font-changer-Info.plist */,
 				9A3A92FE2C56B021007D1BD1 /* Font_changerApp.swift */,
 				9A3A93002C56B021007D1BD1 /* ContentView.swift */,
 				9A3A93022C56B023007D1BD1 /* Assets.xcassets */,
@@ -65,6 +94,27 @@
 				9A3A93052C56B023007D1BD1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A9ABF652C5D14590029615D /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				9A9ABF582C5D14590029615D /* LICENSE.txt */,
+				9A9ABF592C5D14590029615D /* Roboto-Black.ttf */,
+				9A9ABF5A2C5D14590029615D /* Roboto-BlackItalic.ttf */,
+				9A9ABF5B2C5D14590029615D /* Roboto-Bold.ttf */,
+				9A9ABF5C2C5D14590029615D /* Roboto-BoldItalic.ttf */,
+				9A9ABF5D2C5D14590029615D /* Roboto-Italic.ttf */,
+				9A9ABF5E2C5D14590029615D /* Roboto-Light.ttf */,
+				9A9ABF5F2C5D14590029615D /* Roboto-LightItalic.ttf */,
+				9A9ABF602C5D14590029615D /* Roboto-Medium.ttf */,
+				9A9ABF612C5D14590029615D /* Roboto-MediumItalic.ttf */,
+				9A9ABF622C5D14590029615D /* Roboto-Regular.ttf */,
+				9A9ABF632C5D14590029615D /* Roboto-Thin.ttf */,
+				9A9ABF642C5D14590029615D /* Roboto-ThinItalic.ttf */,
+			);
+			name = Roboto;
+			path = ../../../Downloads/Roboto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +175,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9ABF722C5D14590029615D /* Roboto-ThinItalic.ttf in Resources */,
+				9A9ABF712C5D14590029615D /* Roboto-Thin.ttf in Resources */,
+				9A9ABF662C5D14590029615D /* LICENSE.txt in Resources */,
 				9A3A93062C56B023007D1BD1 /* Preview Assets.xcassets in Resources */,
+				9A9ABF6D2C5D14590029615D /* Roboto-LightItalic.ttf in Resources */,
+				9A9ABF692C5D14590029615D /* Roboto-Bold.ttf in Resources */,
+				9A9ABF6F2C5D14590029615D /* Roboto-MediumItalic.ttf in Resources */,
+				9A9ABF682C5D14590029615D /* Roboto-BlackItalic.ttf in Resources */,
 				9A3A93032C56B023007D1BD1 /* Assets.xcassets in Resources */,
+				9A9ABF6B2C5D14590029615D /* Roboto-Italic.ttf in Resources */,
+				9A9ABF6A2C5D14590029615D /* Roboto-BoldItalic.ttf in Resources */,
+				9A9ABF6E2C5D14590029615D /* Roboto-Medium.ttf in Resources */,
+				9A9ABF702C5D14590029615D /* Roboto-Regular.ttf in Resources */,
+				9A9ABF672C5D14590029615D /* Roboto-Black.ttf in Resources */,
+				9A9ABF6C2C5D14590029615D /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +338,7 @@
 				DEVELOPMENT_TEAM = M233Y22CJD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Font-changer-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +368,7 @@
 				DEVELOPMENT_TEAM = M233Y22CJD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Font-changer-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
